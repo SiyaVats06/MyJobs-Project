@@ -9,6 +9,7 @@ export function UserContextProvider({children}){
     const [username, setUsername] = useState("LOGIN");
     const [loginState,setLoginState]=useState(false)
     const [showLogout,setShowLogout]=useState(false)
+    const [showApplicant, setShowApplicant] = useState(false)
 
     // function SignUp(email,passoword){
     //     return createUserWithEmailAndPassword(auth,email,passoword)
@@ -25,11 +26,11 @@ export function UserContextProvider({children}){
     //     }
     // },[])
 
-    return ( <User.Provider value={{username,setUsername,loginState,setLoginState,showLogout,setShowLogout}}> {children} </User.Provider>);
+    return ( <User.Provider value={{username,setUsername,loginState,setLoginState,showLogout,setShowLogout,showApplicant, setShowApplicant}}> {children} </User.Provider>);
     
 }
 
 export function UseUserContext(){
-    const {username,setUsername,loginState,setLoginState,showLogout,setShowLogout}=useContext(User);
-    return {username,setUsername,loginState,setLoginState,showLogout,setShowLogout}
+    const {username,setUsername,loginState,setLoginState,showLogout,setShowLogout,showApplicant, setShowApplicant}=useContext(User);
+    return {username,setUsername,loginState,setLoginState,showLogout,setShowLogout,showApplicant, setShowApplicant}
 }

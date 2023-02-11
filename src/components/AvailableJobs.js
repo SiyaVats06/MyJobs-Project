@@ -1,7 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
+import { UseUserContext } from '../contexthook'
 
 function AvailableJobs({cityname,position,description}) {
+  const {showApplicant, setShowApplicant} =UseUserContext()
   return (
     <Container>
         <Wrap>
@@ -10,7 +12,7 @@ function AvailableJobs({cityname,position,description}) {
            <Detail>
             <Image><img src='./images/location.svg' alt=''></img></Image>
             <CityName>{cityname}</CityName>
-            <ApplicantDetail><div>View Applicants</div></ApplicantDetail>
+            <ApplicantDetail onClick={()=>{setShowApplicant(true)}}><div>View Applicants</div></ApplicantDetail>
            </Detail>
 
         </Wrap>
@@ -74,6 +76,7 @@ opacity: 0.8;`
 
 const ApplicantDetail=styled.div`
 width: 125px;
+cursor:pointer;
 height: 32px;
 background: #43AFFF33 0% 0% no-repeat padding-box;
 border-radius: 5px;

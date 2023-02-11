@@ -5,10 +5,11 @@ import { useNavigate } from 'react-router-dom';
 import AvailableJobs from './AvailableJobs';
 import data from '../Jobdata';
 import Pagination from './Pagination';
+import Applicant from './Applicant';
 
 function PostedJobs() {
     const navigate=useNavigate();
-    const{setUsername,showLogout,setLoginState}=UseUserContext();
+    const{setUsername,showLogout,setLoginState,showApplicant, setShowApplicant}=UseUserContext();
     const [currentPage, setCurrentPage] = useState(1)
     const [postPerPage, setPostPerPage] = useState(12)
 
@@ -27,6 +28,7 @@ function PostedJobs() {
 
     return (
         <Container>
+       <ApplicantPage showdata={showApplicant}><Applicant /></ApplicantPage> 
             <Menu>
                 <HomeImage>
                     <img src='./images/homeicon.svg' alt=''></img>
@@ -63,7 +65,7 @@ export default PostedJobs
 
 const Container = styled.div`
 position:relative;
-
+z-index:1;
 background: #EDF6FF 0% 0% no-repeat padding-box;
 `
 
@@ -123,7 +125,7 @@ text-align:initial;`
 const Content=styled.div`
 
 display:flex;
-z-index:10000;
+z-index:1;
 margin-top:-40px;
 align-items:center;
 flex-direction:column;
@@ -136,7 +138,7 @@ display:grid;
 grid-template-columns:repeat(4,1fr);
 grid-column-gap:18px;
 grid-row-gap:45px;
-z-index:10000;
+z-index:1;
 @media  screen and (width<1150px){
     grid-template-columns:repeat(3,1fr);
     
@@ -180,3 +182,15 @@ border-radius: 5px;
 opacity: 1;
 color:white;
 }`
+
+const ApplicantPage=styled.div`
+background:rgba(0,0,0,0.55);
+position:fixed;
+top:0;
+bottom:0;
+left:0;
+right:0;
+z-index:1000;
+visibility:${props=>`${props.showdata ? "visible":"hidden"}`};
+opacity:${props=>`${props.showdata ? "1":"0"}`};
+`
