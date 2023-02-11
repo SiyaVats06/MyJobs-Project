@@ -1,13 +1,13 @@
 const data=[
     {
         key:1,
-        position:"Front-end Developer",
+        position:"React Developer",
         description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt…",
         city:"Bengalaure"
     },
     {
         key:2,
-        position:"Back-end Developer",
+        position:"NodeJS Developer",
         description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt…",
         city:"Delhi"
     },
@@ -19,7 +19,7 @@ const data=[
     },
     {
         key:4,
-        position:"Front-end Developer",
+        position:"React Developer",
         description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt…",
         city:"Bengalaure"
     },
@@ -31,7 +31,7 @@ const data=[
     },
     {
         key:6,
-        position:"Front-end Developer",
+        position:"Python Developer",
         description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt…",
         city:"Haryana"
     },
@@ -43,25 +43,25 @@ const data=[
     },
     {
         key:8,
-        position:"Front-end Developer",
+        position:"React Developer",
         description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt…",
         city:"Bengalaure"
     },
     {
         key:9,
-        position:"Front-end Developer",
+        position:"React Developer",
         description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt…",
         city:"Bengalaure"
     },
     {
         key:10,
-        position:"Front-end Developer",
+        position:"React Developer",
         description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt…",
         city:"Bengalaure"
     },
     {
         key:11,
-        position:"Front-end Developer",
+        position:"React Developer",
         description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt…",
         city:"Bengalaure"
     },
@@ -73,7 +73,7 @@ const data=[
     },
     {
         key:13,
-        position:"Back-end Developer",
+        position:"NodeJS Developer",
         description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt…",
         city:"Bengalaure"
     },
@@ -86,25 +86,25 @@ const data=[
     ,
     {
         key:15,
-        position:"Front-end Developer",
+        position:"React Developer",
         description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt…",
         city:"Bengalaure"
     } ,
     {
         key:16,
-        position:"Front-end Developer",
+        position:"Angular Developer",
         description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt…",
         city:"Bengalaure"
     },
     {
         key:17,
-        position:"Front-end Developer",
+        position:"React Developer",
         description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt…",
         city:"Bengalaure"
     },
     {
         key:18,
-        position:"Back-end Developer",
+        position:"NodeJS Developer",
         description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt…",
         city:"Bengalaure"
     }
@@ -117,7 +117,7 @@ const data=[
     } ,
     {
         key:20,
-        position:"Front-end Developer",
+        position:"React Developer",
         description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt…",
         city:"Bengalaure"
     }
