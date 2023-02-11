@@ -1,24 +1,45 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Home from "./components/Home"
+import Header from './components/Header'
+import Login from './components/Login';
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
+import PostedJobs from './components/PostedJobs';
+import { UserContextProvider } from './contexthook';
+import Applicant from './components/Applicant';
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Home/>,
+  },
+  {
+    path: "/login",
+    element: <Login />,
+  },
+  {
+    path: "/postedjobs",
+    element: <PostedJobs />,
+  },
+  {
+    path: "/applicants",
+    element: <Applicant />,
+  },
+]);
+
+
 
 function App() {
   return (
+ <UserContextProvider>
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+       <Header />
+       <RouterProvider router={router} />
     </div>
+    </UserContextProvider>
   );
 }
 
